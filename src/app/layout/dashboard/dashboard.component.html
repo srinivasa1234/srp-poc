@@ -1,0 +1,76 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Socialized research center </h2>
+    <div class="row">
+        <div class="col-md-6">
+            <ngb-carousel>
+                <ng-template ngbSlide *ngFor="let slider of sliders">
+                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
+                    <div class="carousel-caption">
+                        <h3>{{slider.label}}</h3>
+                        <p>{{slider.text}}</p>
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+            <div style="margin-top:20px;">
+                 <div class="jumbotron">
+                    <h2>Hello tittle</h2>
+                    <p>
+                        This is a template for a simple marketing or informational website. It includes a large callout called a jump and three supporting pieces of content. Use it as a starting point to create something more unique.
+                    </p>
+                    <p>
+                        <a href="javascript:void(0)" class="btn btn-sm btn-info" role="button">Read »</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+         <div class="col-md-3" style="margin-top:20px;">
+            <div class="card card-default mb-3">
+                <div class="card-header">
+                    Your Activities(2)
+                </div>
+                <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
+                <div style="margin-left:10px;">
+                <p style="margin-top:10px;margin-bottom:0px"><b>Activity name</b></p>
+                <p>close date: dd/MM/yyyy</p>
+               </div>
+                <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
+                <div style="margin-left:10px;">
+                <p style="margin-top:10px;margin-bottom:0px"><b>Activity name</b></p>
+                <p>close date: dd/MM/yyyy</p>
+               </div>
+
+                
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-3" style="margin-top:20px;">
+            <div class="card text-white bg-success mb-3">
+                
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text" style="padding: 20px">module 1</p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-primary mb-3" >
+                
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text" style="padding: 20px">module 2</p>
+                </div>
+            </div>
+
+            <div class="card text-white bg-dark mb-3">
+                
+                <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text" style="padding: 25px">module 3</p>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+    <hr>
+   
+</div>

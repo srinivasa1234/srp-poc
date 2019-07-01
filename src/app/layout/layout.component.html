@@ -1,0 +1,10 @@
+<app-header></app-header>
+<!--<app-sidebar (collapsedEvent)="receiveCollapsed($event)"></app-sidebar> -->
+<section class="main-container" [ngClass]="{collapsed: collapedSideBar}">
+    <router-outlet></router-outlet>
+</section>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center" style="color: #ccc;">
+      <small>Copyright &copy; Your Website</small>
+    </div>
+  </footer>
